@@ -14,8 +14,9 @@ phases:
 
 artifacts:
   files:
-    - "dist/**/*"
-    - "../appspec.yml"
-    - "../scripts/**/*"
+    - "app/dist/**/*"
+    - "appspec.yml"
+    - "scripts/**/*"
   discard-paths: no
-  base-directory: app
+  type: zip
+  name: "app.zip"
